@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 
 public class Activity_Main extends AppCompatActivity {
-    
+
     private final String MY_COUNTER = "MY_COUNTER";
 
     private TextView main_LBL_title;
@@ -59,6 +59,7 @@ public class Activity_Main extends AppCompatActivity {
         Intent myIntent = new Intent(Activity_Main.this, Activity_Calculator.class);
         myIntent.putExtra(Activity_Calculator.EXTRA_KEY_COUNT, count);
         startActivity(myIntent);
+        finish();
     }
 
     private void findViews() {
