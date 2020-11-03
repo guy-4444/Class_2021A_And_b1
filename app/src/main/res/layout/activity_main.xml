@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Main">
+
+    <TextView
+        android:id="@+id/main_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#AAAAAAAA"
+        />
+
+    <Button
+        android:id="@+id/main_BTN_counterIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Increase Counter"
+        android:textSize="20sp"
+        android:layout_below="@id/main_LBL_title"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="14dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_BTN_counterIncrease"
+        android:layout_above="@+id/main_BTN_calc"
+        android:layout_marginLeft="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_panda"/>
+
+    <Button
+        android:id="@+id/main_BTN_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Open Calculator"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
